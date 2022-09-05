@@ -31,7 +31,7 @@ main {
   width: 100%;
   max-width: 500px;
   min-height: 100vh;
-  padding: clamp(35px, 8%, 70px);
+  padding: clamp(35px, 8%, 70px); /*corta nos valores, minimo, ideais, maximos*/
 }
 
 .wrapper {
@@ -149,8 +149,8 @@ main {
   display: block;
   width: 5px;
   height: 10px;
-  border: 3px solid white;
-  border-width: 0 3px 3px 0;
+  border: 3px solid var(--white);
+  border-width: 0 3px 3px 0; /*Faz ficar somente o L invertido para sinalizar o sinal de checked*/
   transform: rotate(45deg);
   margin: 2px 6px;
 }
@@ -170,12 +170,12 @@ main {
 }
 
 .login_button svg {
-  fill: white;
+  fill: var(--white);
 }
 
 .login_button:disabled {
   cursor: auto;
-  background-color: white;
+  background-color: var(--white);
   border: 2px solid var(--light-grey);
 }
 
